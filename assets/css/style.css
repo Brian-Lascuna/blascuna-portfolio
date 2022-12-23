@@ -1,0 +1,66 @@
+* {
+    font-family: 'Open Sans', 'Ariel', sans-serif;
+}
+
+header {
+    padding: 20px 0px;
+    background-color: blue;
+    border-bottom: 5px solid black;
+}
+
+header h1 {
+    font-size: 300%;
+    margin-left: 30px;
+}
+
+header nav {
+    float: right;
+    margin-right: 25px;
+    font-size: 150%;
+}
+
+header nav ul {
+    position: relative;
+    bottom: 40px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.banner {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-color: gray;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 300%;
+    padding: 10px 40px 10px 10px;
+    margin: 20px;
+    height: 80px;
+    width: 300px;
+    background-color: green;
+}
+
+.about-me p {
+    width: 1500px;
+    padding-left: 30px;
+    border-left: 5px solid black;
+    background-color: pink;
+}
+
+.container {
+    width: 1500px;
+    display: flex;
+}
+
+.about-me, .work-portfolio {
+    display: inline-flex;
+}
