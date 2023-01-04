@@ -1,4 +1,5 @@
 * {
+    font-size: 16px;
     font-family: 'Open Sans', 'Ariel', sans-serif;
 }
 
@@ -9,44 +10,48 @@ header {
 }
 
 header h1 {
-    font-size: 300%;
+    font-size: 4rem;
     margin-left: 30px;
 }
 
 header nav {
     float: right;
     margin-right: 25px;
-    font-size: 150%;
 }
 
 header nav ul {
+    display: inline-flex;
     position: relative;
-    bottom: 40px;
+    bottom: 50px;
 }
 
 header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+    margin: 0 15px;
+}
+
+a {
+    font-size: 2rem;
 }
 
 .banner {
-    height: 300px;
+    height: 200px;
     width: 100%;
     margin-bottom: 25px;
     background-color: gray;
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 75px;
 }
 
 section h2 {
-    font-size: 300%;
+    font-size: 3rem;
     padding: 10px 40px 10px 10px;
     margin: 20px;
     height: 80px;
     width: 300px;
     background-color: green;
+    text-align: center;
 }
 
 .about-me p {
@@ -54,13 +59,43 @@ section h2 {
     padding-left: 30px;
     border-left: 5px solid black;
     background-color: pink;
+    font-size: 1.5rem;
 }
 
-.container {
+.portfolio-container {
     width: 1500px;
+    height: 80vh;
     display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
 }
 
-.about-me, .work-portfolio {
+.portfolio-container div {
+    flex: 1 1 40%;
+    margin: 20px;
+    background-color: red;
+}
+
+.portfolio-container div:nth-child(1) {
+    flex-basis: 100%;
+}
+
+.contact-info {
+    border: 3px solid black;
+}
+
+.contact-info ul {
+    display: flex;
+    width: 1500px;
+}
+
+.contact-info ul li {
+    margin: auto;
+    font-size: 2rem;
+    position: relative;
+    top: 30px;
+}
+
+.about-me, .work-portfolio, .contact-me {
     display: inline-flex;
 }
