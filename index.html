@@ -15,21 +15,21 @@
         <!--Navigation bar within header-->
         <nav>
             <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work-portfolio">Work</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="#am">About Me</a></li>
+                <li><a href="#wp">Work</a></li>
+                <li><a href="#cm">Contact Me</a></li>
+                <li id="resumeBtn"><a href="#resume">Resume</a></li>
             </ul>
         </nav>
     </header>
 
     <figcaption class="banner">
-        <h2>Cool subtitle</h2>
+        <h2>Actively learning</h2>
     </figcaption>
     
     <!--Main body of webpage-->
     <main>
-        <section class="about-me">
+        <section id="am" class="about-me">
             <h2>About Me</h2>
 
             <div class="about-me-text">
@@ -37,64 +37,50 @@
                     My name is Brian Lascuna, I've been studying Computer Science for a few years and still have much to learn. I'm currently attending the UC Davis Coding Bootcamp
                     in hopes that I may kickstart myself into this industry and gain some valuable work experience wherever that may be. Although there is still a lot that I don't
                     know, I'm confident in my ability to learn things quickly and apply them accordingly. I'm also confident in my ability to communicate and work with others in a team
-                    setting. The portfolio below contains projects that I have worked on over the course as well as some personal projects that I have worked on during my own time.  
-                </p>
+                    setting. The portfolio below contains projects that I have worked on over the course as well as some personal projects that I have worked on during my own time.
+                </p>  
             </div>
         </section>
 
-        <section class="work-portfolio">
+        <section id="wp" class="work-portfolio">
             <h2>Work</h2>
             
             <div class="portfolio-container">
-                <div class="horiseon-code-refactor">
+                <div id ="horiseon" class="horiseon-code-refactor">
                     <h3>Horiseon Code Refactor</h3>
-                    <p>
-                        A webpage with legacy code that has been refactored to fit modern standards.
-                    </p>
                 </div>
 
-                <div class="project-2">
-                    <h3>Project 2</h3>
-                    <p>
-                        placeholder text
-                    </p>
+                <div id="passwordGenerator" class="password-generator">
+                    <h3>Password Generator</h3>
                 </div>
 
-                <div class="project-3">
+                <div id="comingSoon" class="project-3">
                     <h3>Project 3</h3>
-                    <p>
-                        placeholder text
-                    </p>
                 </div>
 
-                <div class="project-4">
+                <div id="comingSoon" class="project-4">
                     <h3>Project 4</h3>
-                    <p>
-                        placeholder text
-                    </p>
                 </div>
 
-                <div class="project-5">
+                <div id="comingSoon" class="project-5">
                     <h3>Project 5</h3>
-                    <p>
-                        placeholder text
-                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="contact-me">
+        <section id="cm" class="contact-me">
             <h2>Contact Me</h2>
 
             <div class="contact-info">
                 <ul>
-                    <li>(510)701-4525</li>
-                    <li>blascuna@gmail.com</li>
-                    <li><a href="https://github.com/Brian-Lascuna">Github</a></li>
+                    <li class="telephone"><a href="tel:+15107014525">(510)701-4525</a></li>
+                    <li class="email"><a href="mailto:blascuna@gmail.com">blascuna@gmail.com</a></li>
+                    <li class="github"><a href="https://github.com/Brian-Lascuna">Github</a></li>
                 </ul>
             </div>
         </section>
     </main>
     
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,9 @@
+:root {
+    --txt-color: #0268cf;
+    --card-bg: #0d0982;
+}
+
+
 * {
     font-size: 16px;
     font-family: 'Open Sans', 'Ariel', sans-serif;
@@ -5,13 +11,20 @@
 
 header {
     padding: 20px 0px;
-    background-color: blue;
+    background: linear-gradient(to right, rgb(41, 37, 49), rgb(32, 18, 99));
     border-bottom: 5px solid black;
+}
+
+main {
+    background: linear-gradient(to right, rgb(41, 37, 49), rgb(32, 18, 99));
 }
 
 header h1 {
     font-size: 4rem;
     margin-left: 30px;
+    color: var(--txt-color);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 header nav {
@@ -27,6 +40,30 @@ header nav ul {
 
 header nav ul li {
     margin: 0 15px;
+    color: var(--txt-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transition: 0.5s;
+}
+
+header nav ul li:hover:nth-child(1) {
+    text-shadow: 0 0 10px var(--txt-color),
+                 0 0 20px var(--txt-color);
+}
+
+header nav ul li:hover:nth-child(2) {
+    text-shadow: 0 0 10px var(--txt-color),
+                 0 0 20px var(--txt-color);
+}
+
+header nav ul li:hover:nth-child(3) {
+    text-shadow: 0 0 10px var(--txt-color),
+                 0 0 20px var(--txt-color);
+}
+
+header nav ul li:hover:nth-child(4) {
+    text-shadow: 0 0 10px var(--txt-color),
+                 0 0 20px var(--txt-color);
 }
 
 a {
@@ -36,8 +73,21 @@ a {
 .banner {
     height: 200px;
     width: 100%;
-    margin-bottom: 25px;
-    background-color: gray;
+    padding-bottom: 25px;
+    background-image: url("../images/binary_code_banner.jpg");
+}
+
+.banner h2 {
+    position: relative;
+    top: 60px;
+    font-size: 3rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px 10px 100px;
+    background-color: #162166;
+    color:var(--txt-color);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 section {
@@ -46,56 +96,282 @@ section {
 
 section h2 {
     font-size: 3rem;
-    padding: 10px 40px 10px 10px;
+    padding: 10px 20px 10px 10px;
     margin: 20px;
-    height: 80px;
-    width: 300px;
-    background-color: green;
+    height: auto;
+    width: 200px;
+    color: var(--txt-color);
     text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
-.about-me p {
-    width: 1500px;
-    padding-left: 30px;
-    border-left: 5px solid black;
-    background-color: pink;
+.about-me {
+    margin-top: 30px;
+}
+
+.about-me-text {
+    padding: 0 30px;
+    color: var(--txt-color);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.about-me-text p {
     font-size: 1.5rem;
 }
 
 .portfolio-container {
-    width: 1500px;
     height: 80vh;
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid black;
 }
 
 .portfolio-container div {
     flex: 1 1 40%;
     margin: 20px;
-    background-color: red;
+    border: 3px solid var(--card-bg);
+}
+
+.portfolio-container div h3 {
+    color: var(--txt-color);
+    width: fit-content;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    padding-left: 30px;
+    padding-right: 10px;
+    background-color: var(--card-bg);
 }
 
 .portfolio-container div:nth-child(1) {
     flex-basis: 100%;
 }
 
-.contact-info {
-    border: 3px solid black;
+.horiseon-code-refactor, .password-generator, .project-3, .project-4, .project-5 {
+    position: relative;
+}
+
+.horiseon-code-refactor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/horiseon-code-refactor.png");
+    background-size: cover;
+    opacity: 0.3;
+    transition: opacity 1s;
+}
+
+.password-generator::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/password_generator.png");
+    background-size: cover;
+    opacity: 0.3;
+    transition: opacity 1s;
+}
+
+.project-3::before, .project-4::before, .project-5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/Image-Coming-Soon-Placeholder.png");
+    background-size: cover;
+    opacity: 0.3;
+    transition: opacity 1s;
+}
+
+.horiseon-code-refactor:hover::before, .password-generator:hover::before, .project-3:hover::before, .project-4:hover::before, .project-5:hover::before {
+    opacity: 1;
 }
 
 .contact-info ul {
     display: flex;
-    width: 1500px;
 }
 
 .contact-info ul li {
-    margin: auto;
+    margin: 0 50px;
+    color: var(--txt-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     font-size: 2rem;
     position: relative;
     top: 30px;
+    transition: 0.5s;
+}
+
+.telephone:hover, .email:hover, .github:hover {
+    text-shadow: 0 0 10px var(--txt-color),
+                 0 0 20px var(--txt-color);
+}
+
+.telephone::before {
+    content: '\1F4DE';
+}
+
+.email::before {
+    content: '\2709';
+}
+
+.github::before {
+    content: '\1F310';
 }
 
 .about-me, .work-portfolio, .contact-me {
     display: inline-flex;
+}
+
+/* Large Screens */
+@media only screen and (min-width : 1824px) {
+    .about-me-text {
+        width: 1500px;
+        border-left: 5px solid black;
+    }
+
+    .portfolio-container {
+        width: 1500px;
+        border-left: 5px solid black;
+    }
+
+    .contact-info {
+        border-left: 5px solid black;
+    }
+
+    .contact-info ul {
+        width: 1500px;
+    }
+
+    .portfolio-container div h3 {
+        font-size: 2rem;
+        position: relative;
+        top: 120px;
+    }
+
+
+}
+
+/* Desktops and laptops */
+@media only screen and (min-width : 1224px) and (max-width : 1823px) {
+    .about-me-text {
+        width: 800px;
+        border-left: 5px solid black;
+    }
+
+    .portfolio-container {
+        width: 800px;
+        border-left: 5px solid black;
+    }
+
+    .contact-info {
+        border-left: 5px solid black;
+    }
+
+    .contact-info ul {
+        width: 800px;
+    }
+
+    .portfolio-container div h3 {
+        font-size: 2rem;
+        position: relative;
+        top: 120px;
+    }
+
+
+}
+
+/* Tablets */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        position: relative;
+        top: 60px;
+    }
+    
+    .about-me-text {
+        width: 500px;
+        border-left: 5px solid black;
+    }
+
+    .portfolio-container {
+        width: 500px;
+        border-left: 5px solid black;
+    }
+
+    .portfolio-container div h3 {
+        font-size: 2rem;
+        position: relative;
+        top: 120px;
+    }
+
+    .contact-info {
+        border-left: 5px solid black;
+    }
+
+    .contact-info ul {
+        width: 500px;
+        flex-direction: column;
+    }
+
+
+}
+
+/* Smartphones */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        position: relative;
+        top: 60px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    section h2 {
+        border-bottom: 5px solid black;
+    }
+    
+    .about-me-text {
+        width: 370px;
+    }
+
+    .portfolio-container {
+        width: 370px;
+    }
+
+    .contact-info ul {
+        width: 370px;
+        flex-direction: column;
+    }
+
+    .portfolio-container div h3 {
+        font-size: 1.5rem;
+        position: relative;
+        top: 40px;
+    }
+
+    .about-me, .work-portfolio, .contact-me {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }
